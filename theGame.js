@@ -50,7 +50,7 @@ const artists=["The Beatles",
 const randomArtistId = Math.floor(Math.random() * artists.length - 1);
 
 function playTheGame() {
-    console.log(artists[randomArtistId]);
+    document.getElementById("theGame").innerHTML = artists[randomArtistId];
 };
 
 document.getElementById('play').onclick = playTheGame();
