@@ -1,8 +1,12 @@
 main {
-    background-color: aqua;
+    background-color: aqua
+}
+
+h1 {
+    color: purple
 }
 
 #theGame {
-    background-color: aqua;
-    color: red;
+    background-color: aqua,
+    color: red
 }
