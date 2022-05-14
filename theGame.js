@@ -53,4 +53,4 @@ function playTheGame() {
     console.log(artists[randomArtistId]);
 };
 
-playTheGame();
+document.getElementById('play').onclick = playTheGame();
