@@ -53,7 +53,6 @@ const playBtn = document.getElementById('play');
 function playTheGame() {
     let randomArtistId = Math.floor(Math.random() * artists.length);
     let selectedArtist = artists[randomArtistId];
-    document.getElementById("theGame").innerHTML = "You have 3 seconds to sing a song by:";
     document.getElementById("artist").innerHTML = `${selectedArtist}`;
     let count = 3;
     const interval = setInterval(() => {
