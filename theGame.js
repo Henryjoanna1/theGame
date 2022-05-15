@@ -49,11 +49,28 @@ const artists=["The Beatles",
 
 const playBtn = document.getElementById('play');
 
+
 function playTheGame() {
-    let randomArtistId = Math.floor(Math.random() * artists.length - 1);
+    let randomArtistId = Math.floor(Math.random() * artists.length);
     let selectedArtist = artists[randomArtistId];
-    document.getElementById("theGame").innerHTML = `You have 30 seconds to sing a song by ${selectedArtist}`;
+    document.getElementById("theGame").innerHTML = `You have 3 seconds to sing a song by ${selectedArtist}`;
 }
 
+function startCountdown(count){
+    const interval = setInterval(() => {
+        document.getElementById('countdown').innerHTML = `${count}`;
+        count--;
+        if (count < 0){
+            clearInterval(interval)
+            document.getElementById('countdown').innerHTML = `Time's up`;
+        }
+    }, 1000);
+
+};
+
+
 playBtn.addEventListener('click', playTheGame);
+playBtn.addEventListener('click', startCountdown(3));
+
+
 
