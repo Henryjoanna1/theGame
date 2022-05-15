@@ -12,6 +12,7 @@ body {
     width: 300px;
     font-family: Rubik, "sans-serif";
     font-size: 24px;
+    text-align: center;
 }
 
 h1 {
@@ -20,6 +21,9 @@ h1 {
 }
 
 #theGame {
-    background-color: aqua;
-    color: red;
+    color: #FA26A0;;
+}
+
+#countdown {
+    color: #F51720;
 }
