@@ -49,7 +49,11 @@ const artists=["The Beatles",
 
 const playBtn = document.getElementById('play');
 
-playBtn.addEventListener('click', () => {
-    const randomArtistId = Math.floor(Math.random() * artists.length - 1);
-    document.getElementById("theGame").innerHTML = artists[randomArtistId];
-});
+function playTheGame() {
+    let randomArtistId = Math.floor(Math.random() * artists.length - 1);
+    let selectedArtist = artists[randomArtistId];
+    document.getElementById("theGame").innerHTML = `You have 30 seconds to sing a song by ${selectedArtist}`;
+}
+
+playBtn.addEventListener('click', playTheGame);
+
