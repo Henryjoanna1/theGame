@@ -47,9 +47,10 @@ const artists=["The Beatles",
 "Shaggy",
 "The Killers"];
 
-const randomArtistId = Math.floor(Math.random() * artists.length - 1);
+
 
 function playTheGame() {
+    const randomArtistId = Math.floor(Math.random() * artists.length - 1);
     document.getElementById("theGame").innerHTML = artists[randomArtistId];
 };
 

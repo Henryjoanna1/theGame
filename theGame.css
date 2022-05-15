@@ -1,12 +1,15 @@
 body {
     display: block;
-    background-color: aqua
+    background-color: aqua;
+    height: 300px;
+    weight: 300px;
 }
 
 h1 {
-    color: purple
+    color: purple;
 }
 
 #theGame {
-    background-color: aqua
+    background-color: aqua;
+    color: red;
 }
