@@ -60,7 +60,7 @@ function playTheGame() {
         count--;
         if (count < 0){
             clearInterval(interval);
-            document.getElementById('countdown').innerHTML = `Time's up`;
+            document.getElementById('countdown').innerHTML = `TIME'S UP!`;
         }
     }, 1000);
 }
