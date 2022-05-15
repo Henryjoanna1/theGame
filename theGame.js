@@ -63,6 +63,7 @@ function startCountdown(count){
         if (count < 0){
             clearInterval(interval)
             document.getElementById('countdown').innerHTML = `Time's up`;
+            count = 3;
         }
     }, 1000);
 
