@@ -47,11 +47,9 @@ const artists=["The Beatles",
 "Shaggy",
 "The Killers"];
 
+const playBtn = document.getElementById('play');
 
-
-function playTheGame() {
+playBtn.addEventListener('click', () => {
     const randomArtistId = Math.floor(Math.random() * artists.length - 1);
     document.getElementById("theGame").innerHTML = artists[randomArtistId];
-};
-
-document.getElementById('play').onclick = playTheGame();
+});
