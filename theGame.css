@@ -6,7 +6,7 @@ nav {
 }
 
 body {
-    display: block;
+    display: flex;
     background-color: cyan;
     height: auto;
     width: auto;
@@ -94,7 +94,7 @@ h1 {
     color: black;
     text-align: center;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 70px;
 }
 
 #countdown {
