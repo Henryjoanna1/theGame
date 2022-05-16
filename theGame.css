@@ -1,6 +1,7 @@
 nav {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: auto;
     height: auto;
     background-color: white;
@@ -9,6 +10,7 @@ nav {
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: cyan;
     height: auto;
     width: auto;
@@ -81,17 +83,14 @@ body {
 h1 {
     color: #FA26A0;
     font-weight: bold;
-    justify-content: center;
 }
 
 #theGame {
     color: #FA26A0;
-    justify-content: center;
 }
 
 #artist {
     color: black;
-    justify-content: center;
     font-weight: bold;
     font-size: 70px;
 }
@@ -100,5 +99,4 @@ h1 {
     color: #F51720;
     font-weight: bold;
     font-size: 50px;
-    justify-content: center;
 }
