@@ -46,16 +46,56 @@ const artists=["The Beatles",
 "Dido",
 "Shaggy",
 "The Killers",
-"Craig David"];
+"Craig David",
+"Cher",
+"One Direction",
+"Beyonce",
+"Taylor Swift",
+"Britney Spears",
+"Christina Aguilera",
+"Jennifer Lopez",
+"Weezer",
+"Fall Out Boy",
+"Paramore",
+"Dua Lipa",
+"Sam Smith",
+"Lynyrd Skynyrd",
+"Don McClean",
+"New Order",
+"The Smiths",
+"Calvin Harris",
+"Rihanna",
+"S Club 7",
+"Girls Aloud",
+"Westlife",
+"Blur",
+"Usher",
+"Eminem",
+"Jimi Hendrix",
+"Stevie Wonder",
+"Donna Summer",
+"ABBA",
+"Mika",
+"Whitney Houston",
+"Dolly Parton",
+"Johnny Cash",
+"The Stone Roses",
+"The Mamas & The Papas",
+"The Carpenters",
+"The Who",
+"Shakira",
+"Kanye West",
+"50 Cent",
+"Snoop Dogg"];
 
 const playBtn = document.getElementById('play');
 
 
 function playTheGame() {
+    let count = 3;
     document.getElementById('theGame').innerHTML = 'You have 3 seconds to sing a song by:'
     let randomArtistId = Math.floor(Math.random() * artists.length);
     let selectedArtist = artists[randomArtistId];
-    let count = 3;
     document.getElementById('artist').innerHTML = `${selectedArtist}`;
     const interval = setInterval(() => {
         document.getElementById('countdown').innerHTML = `${count}`;
