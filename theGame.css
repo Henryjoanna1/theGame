@@ -1,5 +1,6 @@
 nav {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: auto;
     height: auto;
     background-color: white;
@@ -7,6 +8,7 @@ nav {
 
 body {
     display: flex;
+    flex-direction: column;
     background-color: cyan;
     height: auto;
     width: auto;
@@ -25,7 +27,7 @@ body {
   color: #111;
   cursor: pointer;
   display: flex;
-  font-family: Inter, sans-serif;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   height: 48px;
   justify-content: center;
@@ -77,29 +79,26 @@ body {
 }
 
 h1 {
-    display: block;
     color: #FA26A0;
     font-weight: bold;
-    text-align: center;
+    justify-content: center;
 }
 
 #theGame {
-    display: block;
     color: #FA26A0;
-    text-align: center;
+    justify-content: center;
 }
 
 #artist {
-    display: block;
     color: black;
-    text-align: center;
+    justify-content: center;
     font-weight: bold;
     font-size: 70px;
 }
 
 #countdown {
-    display: block;
     color: #F51720;
     font-weight: bold;
     font-size: 50px;
+    justify-content: center;
 }
