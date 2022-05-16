@@ -40,29 +40,30 @@ const artists=["The Beatles",
 "Olivia Rodrigo",
 "R Kelly",
 "Basshunter",
-"Daniel Beddingfield",
-"Natasha Beddingfield",
+"Daniel Bedingfield",
+"Natasha Bedingfield",
 "Greenday",
 "Dido",
 "Shaggy",
-"The Killers"];
+"The Killers",
+"Craig David"];
 
 const playBtn = document.getElementById('play');
 
 
 function playTheGame() {
+    document.getElementById('play').innerHTML = 'Play again';
     document.getElementById('theGame').innerHTML = 'You have 3 seconds to sing a song by:'
     let randomArtistId = Math.floor(Math.random() * artists.length);
     let selectedArtist = artists[randomArtistId];
     let count = 3;
-    document.getElementById("artist").innerHTML = `${selectedArtist}`;
+    document.getElementById('artist').innerHTML = `${selectedArtist}`;
     const interval = setInterval(() => {
         document.getElementById('countdown').innerHTML = `${count}`;
         count--;
         if (count < 0){
             clearInterval(interval);
             document.getElementById('countdown').innerHTML = `TIME'S UP!`;
-            document.getElementById('play').innerHTML = `Play again`;
         }
     }, 1000);
 }
