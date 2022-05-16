@@ -31,7 +31,7 @@ body {
   justify-content: center;
   line-height: 24px;
   max-width: 100%;
-  *padding: 0 25px;
+  padding: 0 25px;
   position: relative;
   margin: auto;
   text-align: center;
@@ -95,4 +95,5 @@ h1 {
     color: #F51720;
     font-weight: bold;
     font-size: 80px;
+    margin-top: 20px;
 }
