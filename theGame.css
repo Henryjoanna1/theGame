@@ -88,12 +88,13 @@ h1 {
 #artist {
     color: black;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 60px;
 }
 
 #countdown {
     color: #F51720;
     font-weight: bold;
-    font-size: 80px;
-    margin-top: 20px;
+    font-size: 60px;
+    margin-top: 0;
+    padding-top: 0;
 }

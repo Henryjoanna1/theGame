@@ -52,7 +52,6 @@ const playBtn = document.getElementById('play');
 
 
 function playTheGame() {
-    //document.getElementById('play').innerHTML = 'Play again';
     document.getElementById('theGame').innerHTML = 'You have 3 seconds to sing a song by:'
     let randomArtistId = Math.floor(Math.random() * artists.length);
     let selectedArtist = artists[randomArtistId];
